@@ -1,0 +1,124 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(30, 38%, 92%);
+}
+
+h2{
+  color: hsl(212, 21%, 14%);
+  font-size: 30px;
+}
+h2,
+.new-price{
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+p{
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.perfume{
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.new-price{
+  color:  hsl(158, 36%, 37%);
+  font-size: x-large;
+}
+.old-price{
+  font-size: x-small;
+  padding-left: 20px;
+  
+}
+
+.btn{
+  background: hsl(158, 36%, 37%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat";
+  padding: 10px;
+  border-radius:5px ;
+}
+
+#card{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  display: flex;
+  height: 400px;
+  width: 500px;
+  
+}
+
+.card_image{
+  background: url(./images/image-product-desktop.jpg) no-repeat center center/cover;
+  flex: 1;
+  border-radius: 10px 0 0 10px;
+}
+
+.card_image-details{
+  background: hsl(0, 0%, 100%);
+  flex: 1;
+  padding: 20px 25px;
+  /* max-width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  border-radius:0px 10px 10px 0px;
+}
+
+
+/* Mobile Design */
+
+@media( max-width:768px){
+  h2{
+    font-size:28px;
+  }
+  
+  
+  
+  #card{
+    position: absolute;
+    left: 10%;
+    top: 5%; 
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 300px;
+    
+  }
+  .card_image{
+    background: url(./images/image-product-mobile.jpg) no-repeat center center/cover;
+    flex: 0.6;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card_image-details{
+    height:500px  ;
+    flex: 1;
+    background: hsl(0, 0%, 100%);
+    padding: 20px 25px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+  }
+  
+}
+
+/* Active states */
+.btn:hover{
+  background-color: hsl(158, 47%, 19%);
+  cursor: pointer;
+}
